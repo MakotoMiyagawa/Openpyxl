@@ -1,0 +1,12 @@
+Excelシートの読み込み（パスワード保護なし）
+
+ openpyxlのインポート
+
+import openpyxl as px
+
+from openpyxl import load_workbook
+
+wb = px.load_workbook("test.xlsx")
+
+print(type(wb))
+wb.close()
